@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="textos.css" media="">
+    <title>cadastro</title>
+</head>
+<body>
+
+    <div>
+        <h1 id="titulo">Reserva de sala</h1>
+    
+    </div>
+
+    <form>
+        <fieldset class="grupo">
+            <div class="campo">
+            <label for="solicitante">Solicitante</label>
+            <input type="text" name="Solicitante" id="Solicitante" required>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+
+        <div class="campo">
+            <label>Qual sua opção?</label>
+            <label>
+                <input type="radio" name="devweb" value="devolver" checked>Devolver
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="alugar">Alugar
+            </label>
+
+        </div>
+
+        <div class="campo">
+            <label for="turno">turno</label>
+                <select id="turno">
+                <option selected disabled value="">selecione </option>
+                <option>manhã</option>
+                <option>tarde</option>
+                <option>noite</option>
+            </select>
+        </div>
+
+        <fieldset class="grupo">
+            <div class="campo">
+                <label>selecione turno</label><br><br>
+                <input Type="checkbox" id="manhã" name="manhã" value="manhã">
+                <label for="manhâ">Manhã</label>
+            </div>
+        </fieldset>
+
+        <button class="botao" type="submit">concluir</button>
+
+    </form>
+</body>
+</html>
